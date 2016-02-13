@@ -1,0 +1,5 @@
+#!/bin/bash
+
+STR="LLVM IR bitcode"
+
+diff <(file -b $1) <(echo $STR) >/dev/null 2>&1 
